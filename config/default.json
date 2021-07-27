@@ -1,4 +1,6 @@
 {
   "port": "5000",
+  "hashPassword": "42.42.42",
+  "jwtPrivateKey": "some jwt 42 key",
   "mongoConnectString": "mongodb+srv://ArtemA:qwer1234@cluster0.tpagl.mongodb.net/authpageDB?retryWrites=true&w=majority"
 }

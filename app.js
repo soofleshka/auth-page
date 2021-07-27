@@ -1,8 +1,11 @@
 const express = require('express');
 const config = require('config');
 const mongoose = require('mongoose');
+const authRouter = require('./routes/authRouter');
 
 const app = express();
+
+app.use('/api/auth', authRouter);
 
 const PORT = config.get('port') || 5000;
 
