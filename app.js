@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path');
 const config = require('config');
 const mongoose = require('mongoose');
 const authRouter = require('./routes/authRouter');
@@ -8,6 +9,12 @@ const app = express();
 app.use(express.json({ extended: true }));
 
 app.use('/api/auth', authRouter);
+
+app.use(express.static(path.join(__dirname, 'client', 'build')));
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
+});
 
 const PORT = config.get('port') || 5000;
 

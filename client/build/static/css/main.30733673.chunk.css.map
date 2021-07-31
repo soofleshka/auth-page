@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/index.css"],"names":[],"mappings":"AAEA,MACE,eAAgB,CAChB,WACF","file":"main.30733673.chunk.css","sourcesContent":["@import '~bootstrap/dist/css/bootstrap.min.css';\n\n.card {\n  max-width: 400px;\n  margin: auto;\n}\n"]}
